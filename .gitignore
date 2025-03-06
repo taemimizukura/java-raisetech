@@ -1,0 +1,47 @@
+### Gradle ###
+.gradle/
+gradle/
+build/
+build.gradle
+gradlew
+gradlew.bat
+settings.gradle
+
+# Gradle Wrapper は必要（リポジトリに含める）
+!gradle/wrapper/
+!gradle/wrapper/gradle-wrapper.jar
+
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+### Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+### Java ###
+*.class  # コンパイル済みの `.class` ファイルを無視
+*.log    # ログファイルもGitに入れない
+
+### その他 ###
+.DS_Store  # macOS の隠しファイル
+Thumbs.db  # Windows の隠しファイル
