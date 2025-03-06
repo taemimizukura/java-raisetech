@@ -1,17 +1,12 @@
 package org.example;
 
-// class Main  org.exampleフォルダ内からしか見れない
-// オレンジ色は予約語　　
 public class Main {
 
-  //public アクセス修飾子　どこからでもアクセス可能
-  //メソッド↓
-  //println 改行(line)ありで出力される
-  public static void main(String[] args) {
-    System.out.println("こんにちは");
-  //void 返り値を求めない
-    System.out.println("HelloWorld!");
-    System.out.println(12345);
-
+    public static void main(String[] args) {
+      //文字列結合と数値計算結果の結合をして
+      // 自分の名前　＋自分の年齢　＋歳です。　が出力されるようにする。
+      int age = 1 + 3 + 1;
+      String name = "tekkun";
+      System.out.println(name + "は" + age + "歳です。");
+    }
   }
-}
