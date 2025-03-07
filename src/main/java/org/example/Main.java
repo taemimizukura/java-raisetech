@@ -1,26 +1,26 @@
 package org.example;
 
+import java.util.List;
+import java.util.stream.Collectors;
+
 public class Main {
 
   public static void main(String[] args) {
-    // Trueになるパターン
-    String firstName1 = "妙美";
-    String lastName1 = "水倉";
+    //文字列のリスト
+    List<String> fruitsList = List.of("りんご","桃","バナナ","もも","洋梨", "梨", "メロン","すいか","柿","レモン");
+    System.out.println("元のリスト" + fruitsList);
+    System.out.println("2文字以上を抽出 " + fruitsList.stream()
+        .filter(fruit -> fruit.length() >= 2)
+        .collect(Collectors.joining(",")));
 
-    if (lastName1.length() >= 2 && firstName1.length() >= 2) {
-      System.out.println("Trueパターン: " + firstName1);
-    } else {
-      System.out.println("Trueパターン: 条件に一致しませんでした。");
-    }
+    // 数値のリスト
+    List<Integer> numberList = List.of(1, 2, 3, 4, 5, 7, 6, 7, 8, 9, 10);
 
-    // Falseになるパターン
-    String firstName2 = "妙";
-    String lastName2 = "水倉";
+    //奇数のものだけを抽出して、平均値を出す
 
-    if (lastName2.length() >= 2 && firstName2.length() >= 2) {
-      System.out.println("Falseパターン: " + firstName2);
-    } else {
-      System.out.println("Falseパターン: 条件に一致しませんでした。");
-    }
+    System.out.println(numberList.stream()
+        .filter(num -> num % 2 == 1)
+        .mapToInt(Integer::intValue)
+        .average());
   }
 }
