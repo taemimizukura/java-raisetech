@@ -21,6 +21,8 @@ public class Main {
     System.out.println(numberList.stream()
         .filter(num -> num % 2 == 1)
         .mapToInt(Integer::intValue)
-        .average());
+        .average()
+        .orElse(0.0));
+
   }
 }
