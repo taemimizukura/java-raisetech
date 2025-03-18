@@ -2,15 +2,15 @@
   01_Javaの歴史 意識してほしいこと_AI活用方法  
   02_開発環境構築  
   [03_HelloWorldの解説](https://github.com/taemimizukura/java-raisetech/tree/kadai03)  
-  04_変数と値の取り扱い 簡単な計算  
-  05_基本型_標準API _分岐処理  
-  06_繰り返し処理_配列_ListとMap_switch式  
-  07_StreamAPIとラムダ式  
-  08_入出力処理と例外処理  
-  09_オブジェクト指向について  
-  10_正規表現  
-  11_Intellijの便利機能  
-  12_Javaの命名規則と学習方法  
+  [04_変数と値の取り扱い 簡単な計算](https://github.com/taemimizukura/java-raisetech/tree/kadai04)  
+  [05_基本型_標準API _分岐処理](https://github.com/taemimizukura/java-raisetech/tree/kadai05)  
+  [06_繰り返し処理_配列_ListとMap_switch式](https://github.com/taemimizukura/java-raisetech/tree/kadai06)  
+  [07_StreamAPIとラムダ式](https://github.com/taemimizukura/java-raisetech/tree/kadai07)  
+  [08_入出力処理と例外処理](https://github.com/taemimizukura/java-raisetech/tree/kadai08)  
+  [09_オブジェクト指向について](https://github.com/taemimizukura/java-raisetech/tree/kadai09)  
+  [10_正規表現](https://github.com/taemimizukura/java-raisetech/tree/kadai10)  
+  [11_Intellijの便利機能](https://github.com/taemimizukura/java-raisetech/tree/kadai11)  
+  [12_Javaの命名規則と学習方法](https://github.com/taemimizukura/java-raisetech/tree/kadai12)  
   13_デバッグの実践  
   【🔰必須】初級理解度チェック
 - 中級編  
