@@ -17,11 +17,11 @@ public class Main {
 
     Library library = new Library(bookList);
 
-    String searchTitle = "夜";   // タイトルから検索（部分一致）
+    String searchTitle = "朝";   // タイトルから検索（部分一致）
 
-    String searchAuthor = "近藤";  // 著者名から検索（部分一致）
+    String searchAuthor = "佐藤";  // 著者名から検索（部分一致）
 
-    int searchNumber = 1;       // numberから検索（完全一致)
+    int searchNumber = 7;       // numberから検索（完全一致)
 
     Printer.allBooks(bookList); //所蔵一覧
 
