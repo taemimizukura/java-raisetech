@@ -5,40 +5,42 @@ import java.util.List;
 
 public class Library {
 
-  private List<Book> books;
+  private final List<Book> books; //Libraryクラス内部からのみアクセス可能 不変
 
+  //書籍のリストを受け取って、Libraryインスタンスを初期化
   public Library(List<Book> books) {
-    this.books = books;
+    this.books = books; //booksロストを初期化
   }
 
-  //Title検索
+  //タイトルによる検索
   public List<Book> searchBooksByTitle(String keyword) {
-    List<Book> result = new ArrayList<>();
-    for (Book book : books) {
-      if (book.matchesTitle(keyword)) {
-        result.add(book);
+    List<Book> searchResult = new ArrayList<>();  //検索結果を格納するリストを定義、初期化
+    for (Book book : books) { //booksリストにある本を1冊ずつ
+      if (book.matchesTitle(keyword)) { //キーワードがタイトルに一致するかチェック
+        searchResult.add(book); //一致する場合、searchResultに追加
       }
     }
-    return result;
+    return searchResult;
   }
 
+  // 著者名による検索
   public List<Book> searchBooksByAuthor(String keyword) {
-    List<Book> result = new ArrayList<>();
+    List<Book> searchResult = new ArrayList<>();
     for (Book book : books) {
       if (book.matchesAuthor(keyword)) {
-        result.add(book);
+        searchResult.add(book);
       }
     }
-    return result;
+    return searchResult;
   }
 
   public List<Book> searchBooksByNumber(int number) {
-    List<Book> result = new ArrayList<>();
+    List<Book> searchResult = new ArrayList<>();
     for (Book book : books) {
       if (book.matchesNumber(number)) {
-        result.add(book);
+        searchResult.add(book);
       }
     }
-    return result;
+    return searchResult;
   }
 }

@@ -3,9 +3,7 @@ package org.example;
 public class Book {
 
   String title;
-
   String author;
-
   int number;
 
   public Book(String title, String author, int number) {
@@ -19,12 +17,10 @@ public class Book {
   }
 
   public String getAuthor() {
-
     return author;
   }
 
   public int getNumber() {
-
     return number;
   }
 
@@ -42,7 +38,7 @@ public class Book {
 
   @Override //出力結果をテキストにする
   public String toString() {
-    return "Book{" + title + ", " + author + ", " + number + "}";
+    return title + ", " + author + ", " + number;
   }
 }
 
